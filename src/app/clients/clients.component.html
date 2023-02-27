@@ -1,0 +1,43 @@
+<h3>Thank You for Registering</h3>
+
+<div>
+    <form [formGroup]="clientForm" (ngSubmit)="addClientToDB()">
+        <p>Name:</p>
+        <input type="text" id="name" placeholder="John Watson" formControlName="name" required><br>
+
+        <!-- <p>Company Name:</p>
+        <input type="text" id="cname" placeholder="My Company Name" formControlName="company"><br> -->
+
+        <p>Email:</p>
+        <input type="text" id="email" placeholder="john@example.com" formControlName="email" required><br>
+
+        <!-- <p>Phone:</p>
+        <input type="text" id="phone" placeholder="713-555-5555" formControlName="phone"><br> -->
+
+        <p>Address:</p>
+        <input type="text" id="address" placeholder="123 Street Name" formControlName="address"><br>
+
+        <p>City:</p>
+        <input type="text" id="city" placeholder="Houston" formControlName="city"><br>
+
+        <p>State</p>
+        <select formControlName="state">
+            <option *ngFor="let state of states">
+                {{state.title}}
+            </option>
+        </select>
+
+        <p>Zip:</p>
+        <input type="text" id="zip" placeholder=77006 formControlName="zip"><br>
+
+        <p>Password</p>
+        <input type="password" id="pass1" placeholder="Enter Password" formControlName="pass1"><br>
+
+        <p>Repeat Password</p>
+        <input type="password" id="pass2" placeholder="Repeat Password" formControlName="pass2"><br>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</div>   

@@ -1,0 +1,51 @@
+<h3>Enter Meeting Information</h3>
+
+<div>
+    <form [formGroup]="meetingForm" (ngSubmit)="addMeetingToDB()">
+        <!-- <p>Purpose of Meeting:</p>
+        <textarea name="purpose" id="purpose" cols="50" rows="4" formControlName="purpose"></textarea>
+
+        <p>Meeting Coordinator:</p>
+        <input type="text" id="coordinator" placeholder="John Watson" formControlName="coordinator"><br> -->
+
+        <p>Meeting Topic:</p>
+        <input type="text" id="topic" formControlName="topic"><br>
+
+        <p>Number of Attendees:</p>
+        <input type="int" id="people_cnt" formControlName="people_cnt"><br>
+
+        <p>Start Date:</p>
+        <input type="datetime-local" id="startdate"  formControlName="startdate"><br>
+
+        <p>End Date:</p>
+        <input type="datetime-local" id="enddate" formControlName="enddate"><br>
+
+        <p>Location:</p>
+        <input type="text" id="location" placeholder="Main Building" formControlName="location"><br>
+
+        <p>Room:</p>
+        <input type="text" id="room" placeholder="Conference Room 123" formControlName="room"><br>
+
+        <!-- <p>
+            <label>Select Attendees:</label><br>
+            
+            <input type="checkbox" id="name1" name="name1" value="Jane">
+            <label for="name1" class="form-label"> Jane Doe</label><br>
+
+            <input type="checkbox" id="name2" name="name2" value="Jack">
+            <label for="name2" class="form-label"> Jack Dawson</label><br>
+
+            <input type="checkbox" id="name3" name="name3" value="Neha">
+            <label for="name3" class="form-label"> Neha Patel</label><br>
+
+            <input type="checkbox" id="name4" name="name4" value="James">
+            <label for="name4" class="form-label"> James Bond</label><br>
+
+            <input type="checkbox" id="name5" name="name5" value="Mike">
+            <label for="name5" class="form-label"> Mike Bell</label><br>
+        </p> -->
+        
+        <br>
+        <button type="submit">Create Meeting</button>
+    </form>
+</div> 

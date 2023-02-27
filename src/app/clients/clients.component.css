@@ -1,0 +1,23 @@
+h3 {
+    text-align: center;
+    font-size: x-large;
+}
+div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0,0,.2);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #39ef74, #9f8ad4 50% );
+}
+#title {
+    font-size: x-large;
+    font-family: cursive;
+    color:rgb(9, 91, 206)
+}
+.test{
+    font-size: small;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(217, 56, 150)
+}
